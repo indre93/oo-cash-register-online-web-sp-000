@@ -10,8 +10,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @total += price * quantity
     @items = []
-    title.map do |item|
-      @items << item
+    @items = title.map {|item| item }
     end
   end
 
