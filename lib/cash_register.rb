@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     @total += price * quantity
-    @items = title.select.each {|x|}
+    @items = title.select {|x|}
   end
 
   def apply_discount
