@@ -11,7 +11,7 @@ class CashRegister
     @total += price * quantity
     @items = []
     title.each do |item|
-      @items << item 
+      @items << item
     end
   end
 
