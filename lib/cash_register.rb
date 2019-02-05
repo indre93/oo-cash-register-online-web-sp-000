@@ -8,6 +8,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+    price.round(2)
     if !quantity
       @total << price
     end
