@@ -8,9 +8,8 @@ class CashRegister
   end
 
   def add_item(item, price, optional_quantity = 1)
-    if optional_quantity == 0
-      @total << price
-    end
+
+
   end
 
   def apply_discount
