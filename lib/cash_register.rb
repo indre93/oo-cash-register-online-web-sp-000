@@ -16,6 +16,10 @@ class CashRegister
 
   end
 
+  def items
+    @items.split("tomato")
+  end
+
   def void_last_transaction
 
   end
