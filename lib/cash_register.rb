@@ -11,7 +11,6 @@ class CashRegister
     @total += price * quantity
     @items = []
     @items = title.map {|item| item }
-    end
   end
 
   def apply_discount
