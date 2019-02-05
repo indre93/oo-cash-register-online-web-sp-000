@@ -9,7 +9,8 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     price.to_f
-    total = @total + price
+    total = @total
+    total + price
 
   end
 
