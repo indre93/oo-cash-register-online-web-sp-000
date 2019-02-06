@@ -14,10 +14,11 @@ class CashRegister
   end
 
   def apply_discount
-    if discount != total
+    if total = discount
+      "After discount, the total comes to $#{total * discount}"
+    else
       "There is no discount to apply."
     end
-
   end
 
   def void_last_transaction
