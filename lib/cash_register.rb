@@ -17,7 +17,7 @@ class CashRegister
     if discount = 0
       "There is no discount to apply."
     else
-      "After the discount, the total comes to $#{total}."
+      "After the discount, the total comes to $#{total * ((100.0 - discount.to_f)/100)).to_i}."
     end
   end
 
