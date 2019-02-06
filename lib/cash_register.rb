@@ -14,10 +14,10 @@ class CashRegister
   end
 
   def apply_discount
-    if total != discount
-      "After discount, the total comes to $#{total = total - 200}"
-    else total == discount
+    if discount = 0
       "There is no discount to apply."
+    else 
+      "After the discount, the total comes to $#{total}."
     end
   end
 
