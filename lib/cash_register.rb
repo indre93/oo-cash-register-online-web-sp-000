@@ -16,8 +16,8 @@ class CashRegister
   def apply_discount
     if discount == 0
       "There is no discount to apply."
-    else discount != 0
-      "After the discount, the total comes to $#{total * (discount.to_f * 100.0).to_i}."
+    else discount.to_f
+      "After the discount, the total comes to $#{discount / total * 100.0}."
     end
   end
 
